@@ -1,0 +1,33 @@
+print("When specifying an element, please capitalize the first letter of the first word. When you give the name of an element, write out the full name. You will be asked to re-enter the element if it was spelled incorrectly.")
+
+# the atomic number of each element
+atomic_number = {"Hydrogen": 1, "Helium": 2, "Lithium": 3, "Beryllium": 4, "Boron": 5, "Carbon": 6, "Nitrogen": 7, "Oxygen": 8, "Fluorine": 9, "Neon": 10, "Sodium": 11, "Magnesium": 12, "Aluminum": 13, "Silicone": 14, "Phosphorus": 15, "Sulfur": 16, "Chlorine": 17, "Argon": 18, "Potassium": 19, "Calcium": 20, "Scandium": 21, "Titanium": 22, "Vanadium": 23, "Chromium": 24, "Manganese": 25, "Iron": 26, "Cobalt": 27, "Nickel": 28, "Copper": 29, "Zinc": 30, "Gallium": 31, "Germanium": 32, "Arsenic": 33, "Selenium": 34, "Bromine": 35, "Krypton": 36, "Rubidium": 37, "Strontium": 38, "Yttrium": 39, "Zirconium": 40, "Niobium": 41, "Molybdenum": 42, "Technetium": 43, "Ruthenium": 44, "Rhodium": 45, "Palladium": 46, "Silver": 47, "Cadmium": 48, "Indium": 49, "Tin": 50, "Antimony": 51, "Tellurium": 52, "Iodine": 53, "Xenon": 54, "Cesium": 55, "Barium": 56, "Lanthanum": 57, "Cerium": 58, "Praseodymium": 59, "Neodymium": 60, "Promethium": 61, "Samarium": 62, "Europium": 63, "Gadolinium": 64, "Terbium": 65, "Dysprosium": 66, "Holmium": 67, "Erbium": 68 ,"Thulium": 69, "Ytterbium": 70, "Lutetium": 71, "Hafnium": 72, "Tantalum": 73, "Tungsten": 74, "Rhenium": 75, "Osmium": 76, "Iridium": 77, "Platinum": 78, "Gold": 79, "Mercury": 80, "Thallium": 81, "Lead": 82, "Bismuth": 83, "Polonium": 84, "Astatine": 85, "Radon": 86, "Francium": 87, "Radium": 88, "Actinium": 89, "Thorium": 90, "Protactinium": 91, "Uranium": 92, "Neptunium": 93, "Plutonium": 94, "Americium": 95, "Curium": 96, "Berkelium": 97, "Californium": 98, "Einsteinium": 99, "Fermium": 100, "Mendelevium": 101, "Nobelium": 102, "Lawrencium": 103, "Rutherfordium": 104, "Dubnium": 105, "Seaborgium": 106, "Bohrium": 107, "Hassium": 108, "Meitnerium": 109, "Darmstadtium": 110, "Roentgenium": 111, "Copernicium": 112, "Ununtrium": 113, "Flerovium": 114, "Ununpentium": 115, "Livermorium": 116, "Ununseptium": 117, "Ununoctium": 118}
+
+# the average mass of each element
+avg_mass = {"Hydrogen": 1.01, "Helium": 4.00, "Lithium": 6.94, "Beryllium": 9.01, "Boron": 10.81, "Carbon": 12.01, "Nitrogen": 14.01, "Oxygen": 16.00, "Fluorine": 19.00, "Neon": 20.18, "Sodium": 22.99, "Magnesium": 24.31, "Aluminum": 26.98, "Silicone": 28.09}#, "Phosphorus": ?, "Sulfur": ?, "Chlorine": ?, "Argon": ?, "Potassium": ?, "Calcium": ?, "Scandium": ?, "Titanium": ?, "Vanadium": ?, "Chromium": ?, "Manganese": ?, "Iron": ?, "Cobalt": ?, "Nickel": ?, "Copper": ?, "Zinc": ?, "Gallium": ?, "Germanium": ?, "Arsenic": ?, "Selenium": ?, "Bromine": ?, "Krypton": ?, "Rubidium": ?, "Strontium": ?, "Yttrium": ?, "Zirconium": ?, "Niobium": ?, "Molybdenum": ?, "Technetium": ?, "Ruthenium": ?, "Rhodium": ?, "Palladium": ?, "Silver": ?, "Cadmium": ?, "Indium": ?, "Tin": ?, "Antimony": ?, "Tellurium": ?, "Iodine": ?, "Xenon": ?, "Cesium": ?, "Barium": ?, "Lanthanum": ?, "Cerium": ?, "Praseodymium": ?, "Neodymium": ?, "Promethium": ?, "Samarium": ?, "Europium": ?, "Gadolinium": ?, "Terbium": ?, "Dysprosium": ?, "Holmium": ?, "Erbium": ? "Thulium": ?, "Ytterbium": ?, "Lutetium": ?, "Hafnium": ?, "Tantalum": ?, "Tungsten": ?, "Rhenium": ?, "Osmium": ?, "Iridium": ?, "Platinum": ?, "Gold": ?, "Mercury": ?, "Thallium": ?, "Lead": ?, "Bismuth": ?, "Polonium": ?, "Astatine": ?, "Radon": ?, "Francium": ?, "Radium": ?, "Actinium": ?, "Thorium": ?, "Protactinium": ?, "Uranium": ?, "Neptunium": ?, "Plutonium": ?, "Americium": ?, "Curium": ?, "Berkelium": ?, "Californium": ?, "Einsteinium": ?, "Fermium": ?, "Mendelevium": ?, "Nobelium": ?, "Lawrencium": ?, "Rutherfordium": ?, "Dubnium": ?, "Seaborgium": ?, "Bohrium": ?, "Hassium": ?, "Meitnerium": ?, "Darmstadtium": ?, "Roentgenium": ?, "Copernicium": ?, "Ununtrium": ?, "Flerovium": ?, "Ununpentium": ?, "Livermorium": ?, "Ununseptium": ?, "Ununoctium": ?}
+
+# the number if neutrons in each element
+neutrons = {"Hydrogen": 0, "Helium": 2, "Lithium": 4, "Beryllium": 5, "Boron": 6, "Carbon": 6, "Nitrogen": 7, "Oxygen": 8, "Fluorine": 10, "Neon": 10, "Sodium": 12, "Magnesium": 12, "Aluminum": 14, "Silicone": 14, "Phosphorus": 16, "Sulfur": 16, "Chlorine": 18, "Argon": 22, "Potassium": 20, "Calcium": 20, "Scandium": 24, "Titanium": 26, "Vanadium": 28, "Chromium": 28, "Manganese": 30, "Iron": 30, "Cobalt": 32, "Nickel": 31, "Copper": 35, "Zinc": 35}#, "Gallium": ?, "Germanium": ?, "Arsenic": ?, "Selenium": ?, "Bromine": ?, "Krypton": ?, "Rubidium": ?, "Strontium": ?, "Yttrium": ?, "Zirconium": ?, "Niobium": ?, "Molybdenum": ?, "Technetium": ?, "Ruthenium": ?, "Rhodium": ?, "Palladium": ?, "Silver": ?, "Cadmium": ?, "Indium": ?, "Tin": ?, "Antimony": ?, "Tellurium": ?, "Iodine": ?, "Xenon": ?, "Cesium": ?, "Barium": ?, "Lanthanum": ?, "Cerium": ?, "Praseodymium": ?, "Neodymium": ?, "Promethium": ?, "Samarium": ?, "Europium": ?, "Gadolinium": ?, "Terbium": ?, "Dysprosium": ?, "Holmium": ?, "Erbium": ? "Thulium": ?, "Ytterbium": ?, "Lutetium": ?, "Hafnium": ?, "Tantalum": ?, "Tungsten": ?, "Rhenium": ?, "Osmium": ?, "Iridium": ?, "Platinum": ?, "Gold": ?, "Mercury": ?, "Thallium": ?, "Lead": ?, "Bismuth": ?, "Polonium": ?, "Astatine": ?, "Radon": ?, "Francium": ?, "Radium": ?, "Actinium": ?, "Thorium": ?, "Protactinium": ?, "Uranium": ?, "Neptunium": ?, "Plutonium": ?, "Americium": ?, "Curium": ?, "Berkelium": ?, "Californium": ?, "Einsteinium": ?, "Fermium": ?, "Mendelevium": ?, "Nobelium": ?, "Lawrencium": ?, "Rutherfordium": ?, "Dubnium": ?, "Seaborgium": ?, "Bohrium": ?, "Hassium": ?, "Meitnerium": ?, "Darmstadtium": ?, "Roentgenium": ?, "Copernicium": ?, "Ununtrium": ?, "Flerovium": ?, "Ununpentium": ?, "Livermorium": ?, "Ununseptium": ?, "Ununoctium": ?}
+
+# user input - element
+element_request = input("\nWhat element: ")
+
+
+# finds all of the properties of specified element
+def find(a, b, c):
+    global element_request
+    while True:
+        if element_request not in atomic_number.keys():  # if the specified element you entered is not in the periodic table, you will be asked to re-enter it again
+            element_request = input("\nPlease re-enter the element: ")
+        else:
+            print("\nResults")
+            if element_request in a.keys():
+                    print("Atomic number: " + str(a[element_request]))
+            if element_request in b.keys():
+                    print("Average mass: " + str(b[element_request]))
+            if element_request in c.keys():
+                    print("Number of neutrons: " + str(c[element_request]))
+            break
+
+
+find(atomic_number, avg_mass, neutrons)
