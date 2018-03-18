@@ -1,2 +1,2 @@
 # science
-Programs designed to for/to solve science based things...
+This repository contains scripts that are used for scientific purposes, i.e. periodic tables and elements. (NOTE: Each folder represents a different script/program)
