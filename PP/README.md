@@ -1,1 +1,1 @@
-This script gives the you the atomic number and more of a given element. (NOTE: This is still a work in progress and need a lot of more work put into it)
+This script gives the properties of a given element, i.e. the atomic number, mass, etc. (NOTE: This script is a work in progress and needs a lot more work put into it)
