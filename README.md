@@ -1,2 +1,2 @@
-# science
-This repository contains scripts that are used for scientific purposes, i.e. periodic tables and elements. (NOTE: Each folder contains an individual script/program that works independent from the scripts/programs in the other folders)
+# What does it do
+This script gives the properties of a given element, i.e. the atomic number, mass, etc. (NOTE: This script is a work in progress and needs a lot more work put into it)
